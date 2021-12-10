@@ -1,0 +1,102 @@
+html, body, main, div, nav {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+
+main {
+    height: 13.8vh;
+    border: 1px dashed lightskyblue;
+    /* flex container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+div {
+    height: 100px;
+    /* flex item */
+    flex-grow: 1;
+    flex-basis: 100px;
+    /* flex container */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font: 900 2rem verdana;
+}
+
+nav {
+color: whitesmoke;
+background-color: lightskyblue;
+font: arial;
+text-align: center;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#s1 {
+    flex-basis: 100%;
+    background-color: lightblue;
+    opacity: 40%;
+}
+
+#idx-atf {
+    /* layout */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background */
+    background-color: #5b5b5b;
+    background-image: url("tacos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*background-origin: border-box;*/
+    background-attachment: fixed;
+    /* formatting */
+}
+
+#idx-atf > div {
+    height: 18vh;
+}
+
+.idx-center-spacebetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.idx-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 3rem;
+}
+button {
+    color: rgb(28, 46, 40);
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid rgb(19, 20, 20);
+    padding: .7rem 1.2rem;
+    border-radius: 3px;
+}
+footer {
+    text-align: center;
+    color: tomato;
+    background-color: lightskyblue;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
